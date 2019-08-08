@@ -1,10 +1,11 @@
 nginxE
-======
+=
+
 nginx扩展
 
 # 功能：
-* http请求头 X-B3-TraceId、X-B3-SpanId处理，如果请求中没有这两个http请求头时，添加这两个请求头，值都为一个随机生产的16位16进制数，
-    如果有，则不处理
+* http请求头 X-B3-TraceId、X-B3-SpanId处理，如果请求中没有这两个http请求头时，添加这两个请求头，值都为一个随机生产的16位16进制数，  
+如果有，则不处理
     
     
 # 使用方法：
@@ -14,7 +15,7 @@ lua-nginx-module 安装方法：https://github.com/openresty/lua-nginx-module#in
 
 2.假设nginx配置目录为 /etc/nginx，把nginxE项目clone到/etc/nginx
 cd /etc/nginx;
-git clone git@git.tuandai888.com:songyanlin/nginxE.git
+git clone https://github.com/cucker0/nginxE
 
 3.配置nginx
 nginx.conf配置文件的http {} 块中添加如下内容(注意路径与实际的一致)：
@@ -40,6 +41,7 @@ underscores_in_headers on
 ```
 
 # Change log
+
 ## v0.2
 * 调优生成id的随机性，增加时间特性
 
