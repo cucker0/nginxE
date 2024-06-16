@@ -1,6 +1,6 @@
--- author: song yanlin
+--author: song yanlin
 
-local ngxE =  require("core/func")
+local ngxE = require("core/func")
 
--- TraceId、SpanId处理
+--TraceId、SpanId处理
 ngxE.TraceIdAndSpanId()
